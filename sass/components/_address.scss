@@ -1,0 +1,21 @@
+.address {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__contacts {
+  display: block;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__physical {
+  margin-bottom: 9px;
+  color: var(--backgroung-white-color);
+}

@@ -1,0 +1,37 @@
+.specialty {
+  padding-top: $sectionPaddingTop;
+}
+
+.specialty__icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--background-grey-color);
+}
+
+.specialty__name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.specialty__description {
+  margin-bottom: 0;
+}
+
+.specialty-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specialty-list__item {
+  width: 270px;
+}
