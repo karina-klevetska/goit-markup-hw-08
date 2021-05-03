@@ -1,5 +1,12 @@
 .specialty {
-  padding-top: $sectionPaddingTop;
+  @media screen and (max-width: 1199.98px) {
+    padding-top: $sectionPaddingTopMobTab;
+    padding-bottom: $sectionPaddingBottomMobTab;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: $sectionPaddingTop;
+  }
 }
 
 .specialty__icon {
@@ -11,6 +18,9 @@
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--background-grey-color);
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .specialty__name {
@@ -20,6 +30,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-title-color);
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
 
 .specialty__description {
@@ -27,11 +41,36 @@
 }
 
 .specialty-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .specialty-list__item {
-  width: 270px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .specialty-list__item:nth-child(4n) {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .specialty-list__item:nth-child(n + 3) {
+    padding-bottom: 0;
+  }
 }

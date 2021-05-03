@@ -1,9 +1,13 @@
 .form-subscribe {
   display: flex;
+
+  @media screen and (max-width: 1199.98px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form-subscribe__input {
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   background-color: transparent;
@@ -23,13 +27,26 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 20px;
+    min-width: 320px;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .button__subscribe {
   display: flex;
-  margin-left: 10px;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .icon__send {

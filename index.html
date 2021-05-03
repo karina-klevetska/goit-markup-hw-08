@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,13 +18,13 @@
         
             <!-- Навигация -->
             <nav class="navigation">
-                <ul class="list menu">
+                <ul class="list menu menu--mobile-hidden">
                     <li class="menu__item"><a class="link menu__link link__current" href="./index.html">Студия</a></li>
                     <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="link menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list contacts">
+            <ul class="list contacts contacts--mobile-hidden">
                 <li class="contacts__item">
                     <a class="link contacts__link" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon" width="16" height="12"> 
@@ -44,8 +44,23 @@
                     </a>
                 </li>
             </ul>
+            <button class="mob-menu-btn" type="button" data-menu-button>
+                <svg class="mob-menu-icon" width="40" height="40">
+                    <use class="mob-menu__open" href="./images/icons.svg#icon-menu-open">
+                    </use>
+                    <use class="mob-menu__close" href="./images/icons.svg#icon-menu-close">
+                    </use>
+                </svg>
+            </button>
         </div>
     </header>
+        <div class="mob-menu" data-menu>
+            <ul class="list mob-menu-list">
+                <li class="mob-menu__item"><a class="link mob-menu__link link__current" href="./index.html">Студия</a></li>
+                <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
+            </ul>
+    </div>
     
     <main>
 
@@ -291,7 +306,6 @@
             </ul>
         </div>
     </section>
-</main>
 
     <!-- Постоянные клиенты -->
     <section class="regular-customers">
@@ -343,6 +357,8 @@
             </ul>
         </div>
     </section>
+    </main>
+
 
     <!--Подвал-->
     <footer class="footer">
@@ -464,5 +480,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

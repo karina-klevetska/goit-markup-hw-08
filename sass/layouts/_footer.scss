@@ -6,11 +6,26 @@
 
 .footer__info {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: -60px;
+
+  // align-items: baseline;
+
+  @media screen and (max-width: 767.98px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .footer__elements {
-  flex-basis: calc(50%);
+  margin-bottom: 60px;
+  text-align: center;
+  // flex-basis: calc(50%);
 }
 
 .footer__title {
