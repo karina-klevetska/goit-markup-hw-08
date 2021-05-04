@@ -25,9 +25,8 @@
 
 .feedback-form__input {
   position: relative;
-  width: 448px;
-  height: 40px;
   padding-left: 42px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -35,6 +34,10 @@
 
   &:focus {
     border: 1px solid var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }
 
@@ -56,7 +59,6 @@
 
 .feedback-form__textarea-field {
   resize: none;
-  width: 448px;
   padding: 26px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -74,4 +76,23 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @media screen and (max-width: 1199.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+}
+
+.button-submit-container {
+  position: relative;
+  width: 100%;
+}
+
+.button-submit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

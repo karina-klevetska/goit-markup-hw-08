@@ -21,13 +21,13 @@
 
         <!-- Навигация -->
         <nav class="navigation">
-            <ul class="list menu">
+            <ul class="list menu menu--mobile-hidden">
                 <li class="menu__item"><a class="link menu__link" href="./index.html">Студия</a></li>
                 <li class="menu__item"><a class="link menu__link link__current" href="./portfolio.html">Портфолио</a></li>
                 <li class="menu__item"><a class="link menu__link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="list contacts">
+        <ul class="list contacts contacts--mobile-hidden">
             <li class="contacts__item">
                 <a class="link contacts__link" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon" width="16" height="12">
@@ -47,8 +47,59 @@
                 </a>
             </li>
         </ul>
+        <button class="mob-menu-btn" type="button" data-menu-button>
+            <svg class="mob-menu-icon" width="40" height="40">
+                <use class="mob-menu__open" href="./images/icons.svg#icon-menu-open">
+                </use>
+                <use class="mob-menu__close" href="./images/icons.svg#icon-menu-close">
+                </use>
+            </svg>
+        </button>
     </div>
 </header>
+<div class="mob-menu" data-menu>
+    <ul class="list mob-menu-list">
+        <li class="mob-menu__item"><a class="link mob-menu__link" href="./index.html">Студия</a></li>
+        <li class="mob-menu__item"><a class="link mob-menu__link link__current--mob" href="./portfolio.html">Портфолио</a></li>
+        <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
+    </ul>
+    <div>
+    <ul class="list mob-menu-contacts">
+        <li class="mob-menu-contacts__item">
+            <a class="link mob-menu-contacts__link-tel" href="tel:+380961111111">
+                +38 096 111 11 11
+            </a>
+        </li>
+        <li class="mob-menu-contacts__item">
+            <a class="link mob-menu-contacts__link-mail" href="mailto:info@devstudio.com">
+                info@devstudio.com
+            </a>
+        </li>
+    </ul>
+    <ul class="list mob-menu-social">
+        <li class="mob-menu-social__item">
+            <a class="link mob-menu-social__link" href="https://www.instagram.com">
+                Instagram
+            </a>
+        </li>
+        <li class="mob-menu-social__item">
+            <a class="link mob-menu-social__link" href="https://www.twitter.com">
+                Twitter
+            </a>
+        </li>
+        <li class="mob-menu-social__item">
+            <a class="link mob-menu-social__link" href="https://www.facebook.com">
+                Facebook
+            </a>
+        </li>
+        <li class="mob-menu-social__item">
+            <a class="link mob-menu-social__link" href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
 
 <main>
 <section class="projects-section">

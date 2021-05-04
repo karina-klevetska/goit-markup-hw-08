@@ -56,10 +56,46 @@
     </header>
         <div class="mob-menu" data-menu>
             <ul class="list mob-menu-list">
-                <li class="mob-menu__item"><a class="link mob-menu__link link__current" href="./index.html">Студия</a></li>
+                <li class="mob-menu__item"><a class="link mob-menu__link link__current--mob" href="./index.html">Студия</a></li>
                 <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
             </ul>
+            <div>
+            <ul class="list mob-menu-contacts">
+                <li class="mob-menu-contacts__item">
+                    <a class="link mob-menu-contacts__link-tel" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mob-menu-contacts__item">
+                    <a class="link mob-menu-contacts__link-mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="list mob-menu-social">
+                <li class="mob-menu-social__item">
+                    <a class="link mob-menu-social__link" href="https://www.instagram.com">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mob-menu-social__item">
+                    <a class="link mob-menu-social__link" href="https://www.twitter.com">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mob-menu-social__item">
+                    <a class="link mob-menu-social__link" href="https://www.facebook.com">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mob-menu-social__item">
+                    <a class="link mob-menu-social__link" href="https://www.linkedin.com">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+            </div>
     </div>
     
     <main>
@@ -473,9 +509,11 @@
                     </label>
                 </div>
 
-                <button class="button" type="submit">
+                <div class="button-submit-container">
+                    <button class="button button-submit" type="submit">
                     Отправить
                 </button>
+                </div>
             </form>
         </div>
     </div>
